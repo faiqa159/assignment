@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function student(name,age)
+{
+    this.name=name;
+    this.age=age;
+}
+s1 = new student("Gloosip",27);
+s2 = new student ("elvish", 30);
+s1.program="mcs";
+console.log(s1.program);
+console.log(s2);
+console.log(s2.program);
+student.prototype.program="mcs";
+console.log(s1,s2);
+</script>
+</body>
+</html>
